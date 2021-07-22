@@ -49,8 +49,6 @@ pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 
 const allowedPets = 2;
-//NOTE TO SELF - remember that, at the property I manage (until Aug 20th),
-//only 2 pets are allowed in a unit - woot!
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
@@ -112,20 +110,20 @@ else{
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
 
-switch (mostPets) {
-
-  case pets:
-     console.log('I have the most pets');
+switch (true) {
+  case (pets > friendsPets):
+      mostPets = pets;
+      console.log('I have the most pets');
       break;
-
-  case friendsPets:
-     console.log('My friends have the most pets');
+  case (friendsPets > pets):
+      mostPets = friendsPets;
+      console.log('My friends have the most pets');
       break;
-
   default:
-      console.log('We have the same number of pets');
+     console.log('We have the same number of pets');
 }
+
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-console.log((adventurous) ? "You are so adventurous" : "You ain't no dang fun");
+console.log((adventurous) ? "Adventures are great" : "How about we stay home?");
