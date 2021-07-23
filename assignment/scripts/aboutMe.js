@@ -65,7 +65,7 @@ else{
 // console log "Roll the dice!"
 
 if(luckyNumber == 2 && adventurous){
-    console.log( 'Roll the dice!');
+  console.log( 'Roll the dice!');
 } // end roll the dice
 
 // 15 - Write a conditional that console logs "I can have more pets!"
@@ -109,6 +109,8 @@ else{
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
+// NOTE: Online resources for switch tutorials are okay at best
+//    I spent quite a bit of time on this - I hope it's close!
 
 switch (true) {
   case (pets > friendsPets):
@@ -126,4 +128,4 @@ switch (true) {
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-console.log((adventurous) ? "Adventures are great" : "How about we stay home?");
+console.log((adventurous) ? "Adventures are great!" : "How about we stay home?");
