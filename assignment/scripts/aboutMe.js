@@ -113,14 +113,14 @@ else{
 switch (true) {
   case (pets > friendsPets):
       mostPets = pets;
-      console.log('I have the most pets');
+      console.log('I can hardly believe it but, at ' + mostPets + ' pets, I have the most pets.');
       break;
   case (friendsPets > pets):
       mostPets = friendsPets;
-      console.log('My friends have the most pets');
+      console.log('Yikes - at ' + mostPets + ' pets, my friends have the most pets.');
       break;
   default:
-     console.log('We have the same number of pets');
+      console.log('Well hot diggity - it appears my friends and I BOTH have ' + mostPets + ' pets! That is neat!');
 }
 
 
