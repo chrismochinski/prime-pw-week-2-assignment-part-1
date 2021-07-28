@@ -91,6 +91,9 @@ else{
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 
+
+//UPDATE - here's how MO did this:
+
 let mostPets;
 
 if(friendsPets > pets){
@@ -105,6 +108,20 @@ else{
   mostPets = pets;
   console.log( 'At ' + mostPets + ' pets, I have the most pets.' );
 } //end I have the most pets
+
+//Here is how Dane suggested it could be done:
+
+switch (pets >= friendsPets) { //do I have as man/more than my friends??
+  case true: //if true, then:
+    mostPets = pets;
+    console.log(`Pets is ${pets}`) //I don't quite understand this one ...
+    break;
+  default:
+    mostPets = friendsPets;
+    console.log(`Friend's pets is ${friendsPets}`);
+    break;
+}
+console.log(`Most pets is ${mostPets}`)
 
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
